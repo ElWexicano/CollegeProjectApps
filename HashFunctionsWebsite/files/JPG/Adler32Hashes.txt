@@ -1,0 +1,9 @@
+; SlavaSoft Optimizing Checksum Utility - fsum 2.52.00337 <www.slavasoft.com>
+;
+; Generated on 12/03/11 at 22:04:24 
+;
+660e4b9a ?ADLER32*Feel No Evil.jpg
+3f2184ec ?ADLER32*Motivation.jpg
+bca85ad2 ?ADLER32*Sad Pills.jpg
+238f43e9 ?ADLER32*Star Wars.jpg
+a66e094f ?ADLER32*Stormtrooper.jpg

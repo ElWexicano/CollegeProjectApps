@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="active"><a href="pdf.html">PDF</a></li>
+						<li><a href="picture.html">Picture</a></li>
+						<li><a href="audio.html">Audio</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>PDF</h1>
+				
+				<p>
+					In this section I will be seeing how the three hash functions perform when generating a hash function for two PDF files. The files that were used had an overall size of 27.1mb and below are those files.
+				</p>
+				
+				<ul>
+					<li><a href="files/PDF/jQuery in Action.pdf">jQuery in Action</a></li>
+					<li><a href="files/PDF/Software Engineering 9th Edition.pdf">Software Engineering 9th Edition</a></li>
+				</ul>
+				
+				<h2>MD-5</h2>
+				
+				<p>
+					Firstly I was going to get the MD-5 hash values for both books and this can be accomplished by running the following command. <i>fsum -md5 *.pdf> MD5Hashes</i> and it instantly produced a 128 bit hash value for each of the books which can be seen below. 
+				</p>
+				
+				<p>
+					<b>6e7abe112a72b0f2ed3ca8e9733b1801</b> *jQuery in Action.pdf<br>
+					<b>ca148588f264be83bee5df58f9bb10e6</b> *Software Engineering 9th Edition.pdf
+				</p>
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected.
+				</p>
+				
+				<img src="img/PDF/verifyMD5.png" title="Verifying MD5" alt="Verifying MD5"/>
+				
+				<h2>SHA-1</h2>
+				
+				<p>
+					Next I was going to get the SHA-1 hash values for both books and this can be accomplished by running the following command. <i>fsum –sha1 *.pdf> SHA1Hashes</i> and it instantly produced a 160 bit hash value for each of the books which can be seen below.
+				</p>
+				
+				<p>
+					<b>c846224851259074bbd1105abca434c58a3bad87</b> ?SHA1*jQuery in Action.pdf<br>
+					<b>ad0f6839974539b141e05021a1378091fdcbcccf</b> ?SHA1*Software Engineering 9th Edition
+				</p>
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected.
+				</p>
+				
+				<img src="img/PDF/verifySHA1.png" title="Verifying SHA1" alt="Verifying SHA1"/>
+				
+				<h2>Adler-32</h2>
+				
+				<p>
+					Finally I was to get the Adler-32 hash values for both books and this can be accomplished by running the following command. fsum -adler *.pdf> Adler32Hashes and it instantly produced a hash value for each of the books which can be seen below.
+				</p>
+				
+				<p>
+					<b>a92fcf96</b> ?ADLER32*jQuery in Action.pdf<br>
+					<b>f20f7bba</b> ?ADLER32*Software Engineering 9th Edition.pdf
+				</p>
+				
+				<p>
+					This time to prove that by changing either one of the hash values or content in the books would result in verification failing so I changed the hash value for the first book. The screenshot below shows the command that I ran and the results which show that the first book failed the test because the hash value did match the one that is created from the hash function.
+				</p>
+				
+				<img src="img/PDF/verifyAdler.png" title="Verifying Adler" alt="Verifying Adler"/>
+				
+				<h4>Hash Value Files</h4>
+				<ul>
+					<li><a href="files/PDF/MD5Hashes.txt">MD-5 Hash Values File</a></li>
+					<li><a href="files/PDF/SHA1Hashes.txt">SHA-1 Hash Values File</a></li>
+					<li><a href="files/PDF/Adler32Hashes.txt">Adler32 Hash Values File</a></li>
+				</ul>
+								
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pdf.html">PDF</a></li>
+						<li><a href="picture.html">Picture</a></li>
+						<li class="active"><a href="audio.html">Audio</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Audio</h1>
+				
+				<p>
+					In this section I will be seeing how the three hash functions perform when generating a hash function for the audio file which is just under 30 minutes in duration and 12.6mb in size. The file is a podcast for a BBC history show.
+				</p>
+				
+				<ul>
+					<li><a href="files/MP3/BBCShow.mp3">BBC History Show Podcast</a></li>
+				</ul>
+				
+				<h2>MD-5 | SHA-1 | Adler32</h2>
+				
+				<p>
+					For this test I was going to get FSUM to create the hash values for the three algorithms at the one time and this was done using the following command <i>fsum -md5 -sha1 –adler BBCShow.mp3>HashValues.txt</i> and it created the below hash values in under a second.
+				</p>
+				
+				<p>
+					<b>8fe27ac006ecbf77bd1e0eb000eb90c7</b> *BBCShow.mp3<br>
+					<b>bae8f8d33c0fe9f4122ff17e71952e5278dff0ef</b> ?SHA1*BBCShow.mp3<br>
+					<b>82d33b78</b> ?ADLER32*BBCShow.mp3
+				</p>
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected. 
+				</p>
+				
+				<img src="img/verifyAudio.png" title="Verifying Audio" alt="Verifying Audio"/>
+				
+				<h4>Hash Value Files</h4>
+				<ul>
+					<li><a href="files/MP3/HashValues.txt">Hash Values File</a></li>
+				</ul>
+								
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+/* 
+    Document   : default
+    Created on : 15-Sep-2011, 09:06:27
+    Author     : iamshanedoyle
+    Description:
+*/
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-size   : 75%;
+    color       : #222;
+    background  : #ffffff;
+    font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height : 1.6em;
+}
+
+.container
+{
+    width       : 1000px;
+    height      : 100%;
+    margin      : 0 auto;
+    padding     : 20px;
+}
+
+
+/* Header Styles */
+
+.headerBg
+{
+    width       : 100%;
+    background  : -moz-linear-gradient(top,#372c24,#2e241d);
+    top         : 0px;
+    z-index     : -1; 
+    left        : 0px;
+    position    : absolute;
+    height      : 60px;
+}
+
+.header
+{
+    color       : #fff;
+    width       : 100%;
+    height      : 40px;
+}
+
+.header .title
+{
+    font-size   : 26px; 
+    font-weight : bold;
+}
+
+.header .motto
+{
+    color       : #4d96e6;
+}
+
+.header .date
+{
+    float       : right;
+    margin-top  : 10px ;
+    padding     : 0px 25px;
+    font-weight : bold;
+}
+
+
+.content, .navigation
+{
+    float       : left; 
+    margin      : 20px 20px 0px 0px;
+}
+
+.content
+{
+    height      : 720px;
+    width       : 740px;
+}
+
+.navigation
+{
+    width       : 200px;
+    padding     : 20px 5px;
+    border      : 1px solid #aaaaaa;
+    background  : #f3f1eb;
+}
+
+
+/* navigation Styles */
+
+.navigation ul, .navigation li
+{
+    margin      : 0px; 
+    padding     : 0; 
+    list-style  : none;
+}
+
+.navigation li 
+{
+    text-align      : left;
+    list-style      : none;
+    padding         : 5px;
+    background      : #ffffff;
+    border          : 1px solid #aaaaaa;
+    text-transform  : uppercase;
+    margin          : 5px;
+}
+
+.navigation li a
+{
+    font-weight : bold; 
+    color       : #000;
+    text-decoration: none; 
+    display     : block;
+    outline     : 0;
+}
+
+.navigation li a:hover
+{
+    color       : #4d96e6;
+    cursor      : pointer;
+}
+
+.navigation li a:active
+{
+    color       : #000;
+}
+
+.navigation li .listIcon
+{
+    width       : 20px;
+    height      : 20px;
+    margin      : 0px 10px 0px 0px;
+    float       : left;
+}
+
+
+/* Tabs Styles */
+.tabs
+{
+    margin      : 0px !important;
+    padding     : 0px !important;
+    height      : 710px;
+    overflow    : hidden; 
+}
+
+.tabs p
+{
+    margin      : 5px 0px 20px 0px;
+}
+
+.tabs p .highlight
+{
+    color       : #4d96e6;
+}
+
+.tabs ul
+{ 
+    list-style-type  : none;
+    
+}
+
+.tabs li
+{
+    margin      : 0px 0px 5px 0px;
+    outline     : none;
+}
+
+.tabs #logosContainer
+{
+    height      : 190px;
+    width       : 690px;
+    margin      : 0 auto;
+}
+
+.tabs #logosContainer img
+{
+    width       : 64px;
+    height      : 64px;
+    padding     : 5px;
+    border      : 1px solid #aaa;
+    float       : left; 
+    margin      : 5px 5px 5px 5px;
+    opacity     : 0.7;
+}
+
+.tabs #logosContainer img:hover
+{
+    cursor      : pointer;
+    opacity     : 1;
+}
+
+.tabs #bannerContainer
+{
+    width       : 100%;
+    height      : 130px;
+    border      : 1px solid #aaaaaa;
+    margin      : 5px 0px 0px 0px;
+}
+
+.tabs #bannerContainer #banner
+{
+    width       : 100%;
+    height      : 100%;
+    background  : url(../img/banner.jpg);
+    opacity     : 0.6;
+}
+
+
+/* Footer Styles */
+.footer
+{
+    text-align  : center;
+    color       : #372c24;
+    padding     : 20px 0px;
+    height      : 20px;
+}
+
+/* Form Styles */
+
+.creationForm
+{
+    width       : 400px;
+}
+
+.creationForm fieldset
+{
+    padding     : 20px 0px;
+}
+
+.creationForm input, .creationForm select
+{
+    float       : left;
+    font-size   : 12px;
+    padding     : 4px 2px;
+    border      : solid 1px #aaa;
+    width       : 200px;
+    margin      : 0px 0 20px 10px;
+}
+
+.creationForm label
+{
+    display     : block;
+    font-weight : bold;
+    text-align  : right;
+    width       : 100px;
+    float       : left;
+    margin      : 0px 0 0px 0px;
+}
+
+.creationForm span
+{
+    color       : #666666;
+    display     : block;
+    font-size   : 11px;
+    font-weight : normal;
+    text-align  : left;
+}
+
+.button
+{
+    width       : 100px !important;
+    float       : right;
+}
+
+.button:hover
+{
+    color       : #4d96e6;
+    cursor      : pointer;
+}
+
+
+/* Login Form */
+
+#spacer
+{
+    height      : 160px;
+    width       : 100%;
+}
+
+.loginForm
+{
+    width       : 350px;
+    height      : 180px;
+    background  : -moz-linear-gradient(top,#372c24,#2e241d);
+    border      : 1px solid #aaa;
+    margin      : 0px auto;
+    padding     : 20px;
+    color       : #fff;
+}
+
+.loginForm input
+{
+    float       : left;
+    font-size   : 12px;
+    padding     : 4px 2px;
+    border      : solid 1px #aaa;
+    width       : 230px;
+    margin      : 0px 0 20px 10px;
+}
+
+.loginForm label
+{
+    display     : block;
+    font-weight : bold;
+    text-align  : right;
+    width       : 100px;
+    float       : left;
+    margin      : 0px 0 0px 0px;
+}
+
+.loginForm .button
+{
+    float       : right;
+    padding     : 5px 20px;
+    margin-right: 03px;
+    width       : 140px;
+    background  : #4d96e6;
+    color       : #fff;
+}
+
+.loginForm hr
+{
+    margin: 0px 0px 20px 0px;
+}
+
+.loginForm h2
+{
+    margin: 0px 0px 5px 0px;
+}
+
+
+/* User Details */
+
+#userDetails
+{
+    border: 1px solid #aaa;
+    width : 180px;
+    margin: 10px 0px 0px 5px;
+    padding: 5px;
+}
+
+/* Search Pages */
+
+#searchOption
+{
+    width: 100%;
+    height: 30px;
+    padding: 5px 0px;
+}
+

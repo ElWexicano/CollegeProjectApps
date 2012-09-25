@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="pdf.html">PDF</a></li>
+						<li><a href="picture.html">Picture</a></li>
+						<li><a href="audio.html">Audio</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Welcome to the site</h1>
+				
+				<p>
+					This site was developed for a Security Principles assignment based upon Digital Certificates. The site is best viewed in Mozilla Firefox 7 but it should be fine to view it in Google Chrome or Safari. If you're using Internet Explorer to view this site then stop immediately and get yourself a proper browser to view it in. 
+				</p>
+				
+				<p>
+					For this research there are several Hash Function exercises that I had to complete. I will explain the different exercises and how they were carried out , also the findings that came from conducting these exercises but firstly lets explain a Hash Function.
+				</p>
+				
+				<p>
+					Note. For this research I am using a Linux OS laptop and the internet browser is Mozilla Firefox. I am also using a Virtual Windows 7 32 bit system for running the FSUM tool.
+				</p>
+				
+				<h2>About Hash Functions</h2>
+				
+				<p>
+					Cryptographic Hash Functions are used to provide integrity to messages and it does this by taking some form of data (file, message, etc), it then performs some calculations and produces a hash value repesenting the data. The hash value is basically a figerprint of the data and it is used to check to see if data has been modified in any way. Hash Functions provide the same sized output for each type of inputted file regardless of it size and as such although two completely different message should not give the same hash value, it is possible that this could happen.
+				</p>
+				
+				<h4>This research will be using the following types of Hash Functions:</h4>
+				
+				<ul>
+					<li><b>Message Digest Algoritm (MD-5)</b> was designed by Ronald Rivest and first published in 1992. It has descended from the earlier MD-4 and produces a 128 bit hash value.</li>
+					<li><b>Secured Hash Algorithm 1 (SHA-1) </b> which is a revised version the original SHA published in 1995 by U.S National Institute of Technology to help solve weaknesses that were discoverd in SHA. It produces a 160 bit hash value and is slower than MD-5.</li>
+					<li><b>Adler-32</b> was created by Mark Adler in 1995. It produces the smallest hash value of the three algorithms and as such is faster than other two.</li>
+				</ul>
+				
+				<h2>About FSUM</h2>
+				
+				<p>
+					Developed by SlavaSoft, it is a command line tool for generating and verifing hashes for files of any kind of format. It includes 11 hash and checksum algorithms such as MD2, MD4, MD5, SHA-1 and SHA-2 just to name a few. The screenshot below shows the different options it provides for file integrity verification.
+				</p>
+				
+				<img class="screenshot" src="img/fsum.png" alt="FSUM Options" title="FSUM Options"/>
+				
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+.dataTables_wrapper 
+{
+    position        : relative;
+    min-height      : 302px;
+    clear           : both;
+    _height                 : 302px;
+}
+
+.dataTables_processing 
+{
+    position        : absolute;
+    top             : 50%;
+    left            : 50%;
+    width           : 250px;
+    height          : 30px;
+    margin-left     : -125px;
+    margin-top      : -15px;
+    padding         : 14px 0 2px 0;
+    border          : 1px solid #ddd;
+    text-align      : center;
+    color           : #999;
+    font-size       : 12px;
+    background-color: white;
+}
+
+.dataTables_length 
+{
+    width           : 40%;
+    float           : left;
+}
+
+.dataTables_info 
+{
+    width           : 60%;
+    float           : left;
+}
+
+table.display 
+{
+    margin          : 0 auto;
+    clear           : both;
+    width           : 100%;
+    border          : 1px solid #aaa;
+    border-top      : none; 
+}
+
+table.display thead
+{
+    
+}
+
+table.display thead th 
+{
+    padding         : 3px 20px 0px 10px;
+    font-weight     : bold;
+    color           : #000;
+    border-top      : 1px solid #aaa; 
+}
+
+table.display td 
+{
+    padding         : 3px 10px;
+}
+
+table.display td.center 
+{
+    text-align      : center;
+}
+
+tr.odd 
+{
+    background-color: #E2E4FF;
+}
+
+tr.even 
+{
+    background-color: white;
+}
+
+.dataTables_scroll 
+{
+    clear           : both;
+}
+
+.top, .bottom 
+{
+    padding         : 15px;
+    background-color: #F5F5F5;
+    border          : 1px solid #CCCCCC;
+}
+
+
+.clear 
+{
+    clear           : both;
+}
+
+.dataTables_empty 
+{
+    text-align      : center;
+}
+
+
+td.details 
+{
+    background-color: #f3f1eb;
+    border-top      : 1px solid #aaa;
+    border-bottom   : 1px solid #aaa;
+}
+
+td.details thead th
+{
+    border          : none;
+    border-bottom   : 1px solid #aaa;
+}
+
+.tableIcon
+{
+    width           : 12px;
+    height          : 12px;
+}
+
+.tableIcon:hover
+{
+    cursor          : pointer;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Steganography - Exercise 2</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">steganography</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="exercise1.html">Exercise 1</a></li>
+						<li class="active"><a href="exercise2.html">Exercise 2</a></li>
+						<li><a href="exercise3.html">Exercise 3</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Exercise Two<span>Hiding & Retrieving Data</span></h1>
+				
+				<p>
+					The main goal of this exercise is to be able to hide and then retrieve data. For this exercise I will be using an open source tool, Hide in Picture which allows you to conceal files in an image.
+				</p>
+
+				<p>
+Firstly 			I had to download the program from SouceForge and then I installed it on my Virtualbox that is running Windows XP Professional. Next I opened the program up and performed the following tasks:
+				</p>
+				
+				<p>
+					First I opened the picture that I wanted to conceal my information in. Below is a screenshot of the picture opened in the program.
+				</p>
+				<img src="img/load.png" title="Hide in Picture" alt="Hide in Picture"/>
+				
+				
+				<p>
+					Next while I had the picture opened, I selected the file that has the information which I want to hide and opened it in Hide in Picture. By doing so the program now prompted me for a password and an encryption algorithm. I used my name as the password (shane) and I chose Blowfish as the encryption algorithm. Below is a screenshot of this.
+				</p>
+				<img src="img/hide.png" title="Hiding a File" alt="Hiding a File"/>
+				
+				<p>
+					Finally I clicked OK and then saved the new image file. This file will store the hidden data in it. Both files are identical in both size <span>(225654 bytes)</span> and in image quality so you will be completely unaware that the second image is storing hidden data. 
+<br>Below are the files; on the left is original image and on the right is the image with the information concealed within it.
+				</p>
+				<img class="compare" src="img/steganography.bmp" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/stegan-hidden.bmp" title="Image with hidden file" alt="Image with hidden file"/>
+				
+				<p>
+					Next step of this exercise was to retrieve the hidden data. This is done similarly to hiding data; first off I opened up the Hide in Picture program and then opened the image with the hidden data. Next I told the application to retrieve the file and it prompted me for the password. Once I entered this it allowed me to save the hidden file to a location of my choice so that I could view its contents.
+				</p>
+				
+				<p>
+					I did the same test as above on a new image, this time it was GIF image. The differences in size between the original GIF image and the GIF image that had the information concealed in it were massive. The original file was <span>88.6 KB (90696 bytes)</span> and the other was <span>160.4 KB (164294 bytes)</span> and the reason for this is that the first image was of 24 bit BMP and the information was stored in the least significant bit of each byte of the image resulting in the image looking identical and the amount of change required to hide the information was relatively small. But with the GIF image being 8 bit it required changing roughly 50% of bits for the least significant bit insertion which resulted in the image gaining size. Both images are also identical in image quality. 
+					<br>Below are the two files; the original file on the left and the file concealing the information is on the right.
+				</p>
+				<img class="compare" src="img/cartoon.gif" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/cartoon-hide.gif" title="Image with hidden file" alt="Image with hidden file"/>
+				
+				<p>That was the final task of this exercise.</p>
+				
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+					
+					<p>
+						Gary C. Kessler. (2001). Steganography: Hiding Data Within Data .Available: http://www.garykessler.net/library/steganography.html. Last accessed 1-11-2011.
+		
+						<br><br>Neil F. Johnson. Steganography. Technical Report. November 1995
+					</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

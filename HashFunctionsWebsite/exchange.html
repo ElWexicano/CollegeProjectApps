@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pdf.html">PDF</a></li>
+						<li><a href="picture.html">Picture</a></li>
+						<li><a href="audio.html">Audio</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li class="active"><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Exchange</h1>
+				
+				<p>
+					In this section I will be exchanging files and their hash values with Tom. The file that I gave to Tom was the PDF for the book <i>jQuery in Action</i> and I provided him the hash values for the three algorithms that I used which are outlined below.
+				</p>
+				
+				<p>
+					<b>6e7abe112a72b0f2ed3ca8e9733b1801</b> *jQuery in Action.pdf<br>
+					<b>c846224851259074bbd1105abca434c58a3bad87</b> ?SHA1*jQuery in Action.pdf<br>
+					<b>a92fcf94</b> ?ADLER32*jQuery in Action.pdf
+				</p>
+				
+				<p>
+					But I changed the value for the Adler32 hash so it should show up as an error when Tom tests he integrity of the hash values. It should be the following hash value.
+				</p>
+				
+				<p>
+					<b>a92fcf96</b> ?ADLER32*jQuery in Action.pdf
+				</p>
+				
+				<h4>Tom's File & Hash Values</h4>
+				
+				<p>
+					The file that I received off Tom was this image of the <a href="files/boyne.jpg">Boyne Valley Logo</a>. I also received the three hash values that Tom had created using FSUM. These hash values using the same algorithms as what I had been using in my previous tests.
+				</p>
+				
+				<p>
+					<b>d1087fb1259ed9d9106b4e7976c2c603</b> *boyne.jpg<br>
+					<b>a8cabc063556d5b38983ff7314252ba6f03b</b> ?SHA1*boyne.jpg<br>
+					<b>cb5bd630</b> ?ADLER32*boyne.jpg
+				</p>
+				
+				<p>
+					Firstly I put these into a file named TomsHashValues.txt and then went checked the integrity of the image using the FSUM check option. The screenshot below shows the command and the results of the check.
+				</p>
+				
+				<img src="img/verifyExchange.png" title="Verifying Exchange" alt="Verifying Exchange"/>
+					
+				<p>
+					FSUM was not recognising the SHA-1 hash value so I decided to recreate the hash value for the SHA-1 and below is the hash value that was calculated.
+				</p>	
+				
+				<p>
+					<b>a8ca6485bc063556d5b38983ff7314252ba6f03b</b> ?SHA1*boyne.jpg
+				</p>
+				
+				<p>
+					The reason it was not recognizing the SHA1 hash value was because some of the hash value was missing in the transfer from Tom’s computer to mine.
+				</p>
+								
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

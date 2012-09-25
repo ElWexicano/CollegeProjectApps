@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pdf.html">PDF</a></li>
+						<li><a href="picture.html">Picture</a></li>
+						<li><a href="audio.html">Audio</a></li>
+						<li class="active"><a href="video.html">Video</a></li>
+						<li><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Video</h1>
+				
+				<p>
+					In this section I will be seeing how the three hash functions perform when generating a hash function for three AVI video clips of the computer game. Each clip is roughly one minute in duration and the combined size of all clips is 34mb. Below is a list of the files.
+				</p>
+				
+				<ul>
+					<li><a href="files/AVI/Courtyard.avi">Courtyard.avi</a></li>
+					<li><a href="files/AVI/Flak.avi">Flak.avi</a></li>
+					<li><a href="files/AVI/Pasture.avi">Pasture.avi</a></li>
+				</ul>
+
+				
+				<h2>MD-5 | SHA-1 | Adler32</h2>
+				
+				<p>
+					For this test I was going to get FSUM to create the hash values for three algorithms at the one time and this was done using the following command <i>fsum -md5 -sha1 -adler *.avi>HashValues.txt</i> and it created the below hash values in under a second.
+				</p>
+							
+				<p>
+					<b>51823dfb29088b28cbb31b8dc7f61c68</b> *Courtyard.avi<br>
+					<b>43000f5faafdc0a1b506f41dfb0e32f7</b> *Flak.avi<br>
+					<b>05e47c71bc1baf9519606c9ebd5f181d</b> *Pasture.avi
+				</p>	
+						
+				<p>
+					<b>d0ba0f57bde1f2f8e6ad4402ef522cf637951853</b> ?SHA1*Courtyard.avi<br>
+					<b>e0b249bd501f3a0a8a627eb5f382e332160cef11</b> ?SHA1*Flak.avi<br>
+					<b>e75f352c6ea3334fd083e236aefc743c05a1091a</b> ?SHA1*Pasture.avi
+				</p>
+				
+				<p>
+					<b>9bbce5a1</b> ?ADLER32*Courtyard.avi<br>
+					<b>45ed1d1e</b> ?ADLER32*Flak.avi<br>
+					<b>11ddbe4f</b> ?ADLER32*Pasture.avi
+				</p>
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected.
+				</p>
+					
+				<img src="img/verifyVideo.png" title="Verifying Videos" alt="Verifying Videos"/>			
+					
+				<h4>Hash Value Files</h4>
+					
+				<ul>
+					<li><a href="files/AVI/HashValues.txt">Hash Values File</a></li>
+				</ul>
+								
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

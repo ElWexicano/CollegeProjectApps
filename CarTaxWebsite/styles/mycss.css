@@ -1,0 +1,177 @@
+body, html {
+  margin:0;
+  padding:0;
+  width:100%;
+  height:100%;
+} 
+
+body {
+  background-color: #FFFFE0;
+  color: #ff0000;
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+
+}
+
+#header { 
+  background-color: #99CC99;
+  padding: 3%;
+  border: 2px solid #000;
+  margin-bottom: 2%;
+  min-width:22em;
+} 
+
+#main {
+  padding: 1%;
+  min-width:28em;
+position:relative;
+width:100%;
+} 
+
+#navigation
+{
+  left:0%;
+  top: 10%;
+  max-width:10%;
+  padding:1%;
+  background-color: #99cc99;
+  border: solid 2px #000;
+  min-width:6%;
+}
+
+#content { 
+  padding: 1%;
+  left:15%;
+top:3%;
+position:absolute;
+} 
+
+#content p { 
+  color:black;
+} 
+
+
+#navigation ul {	
+  list-style-type:none;
+  margin-left:-10%;
+}
+#navigation li {
+
+  padding: .4em 0;
+}
+
+h1, h2{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #666666;
+}
+
+h1{
+  font-size: 24px;
+}
+
+
+h2{
+  font-size: 20px;
+}
+
+
+#navigation a {   
+  font-size: 13px;
+  font-weight:bold;
+}
+
+#navigation a:link {
+  text-decoration: none;
+  color: navy;
+}
+
+#navigation a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+#navigation a:hover {
+  text-decoration: underline;
+}
+
+#navigation a:active {
+  color: aqua;
+}
+
+form.cartax
+{ 
+  max-width:60em;
+  min-width:28em;
+}
+
+form.cartaxfieldset {   
+  border: 2px solid navy;   
+  padding: 0em 1em 1em 1em; 
+}  
+
+form.cartax legend {   
+  font-weight: bold;   
+  font-size: medium;   
+  color: navy;  
+  padding:0 .5em; 
+}
+
+form.cartax label {
+  font-weight: bold;
+  font-size: medium;
+  color: navy;
+  line-height:125%;
+}
+
+form.cartax p.radio {
+  font-weight: bold;
+  font-size: medium;
+  color: navy;
+  line-height: 150%;
+
+}
+
+form.cartax label.fixedwidth {   
+  width: 150px;   
+  float: left; 
+}
+
+form.cartax .buttonarea {    
+  padding: 1.5em; 
+  margin-left:2%;
+  width:400px;
+}
+form.cartax .fieldarea {    
+  width:30em;
+  margin:.8em;
+}
+
+form.cartax .buttonarea input {   
+  background-color: navy;
+  color: white;   
+  font-weight: bold;   
+  padding: .5%; 
+  border: 1px solid white; 
+}
+
+table th, table td {
+  padding: .3em;
+  border: 1px solid #000066;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th {
+  font-size: x-small;
+  text-align: left;
+  color: #ffffff;
+  background: #241374;
+  padding: 0 .5em;
+}
+
+table td {
+  font-size: medium;
+  background: #e2edff;
+  color:navy
+}

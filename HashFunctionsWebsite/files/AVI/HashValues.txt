@@ -1,0 +1,13 @@
+; SlavaSoft Optimizing Checksum Utility - fsum 2.52.00337 <www.slavasoft.com>
+;
+; Generated on 12/03/11 at 23:04:43 
+;
+51823dfb29088b28cbb31b8dc7f61c68 *Courtyard.avi
+d0ba0f57bde1f2f8e6ad4402ef522cf637951853 ?SHA1*Courtyard.avi
+9bbce5a1 ?ADLER32*Courtyard.avi
+43000f5faafdc0a1b506f41dfb0e32f7 *Flak.avi
+e0b249bd501f3a0a8a627eb5f382e332160cef11 ?SHA1*Flak.avi
+45ed1d1e ?ADLER32*Flak.avi
+05e47c71bc1baf9519606c9ebd5f181d *Pasture.avi
+e75f352c6ea3334fd083e236aefc743c05a1091a ?SHA1*Pasture.avi
+11ddbe4f ?ADLER32*Pasture.avi

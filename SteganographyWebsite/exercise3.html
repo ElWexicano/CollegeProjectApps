@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Steganography - Exercise 3</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">steganography</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="exercise1.html">Exercise 1</a></li>
+						<li><a href="exercise2.html">Exercise 2</a></li>
+						<li class="active"><a href="exercise3.html">Exercise 3</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Exercise Three<span>Experiments</span></h1>
+
+
+				<p>
+					In this section of the exercise I was to carry out several experiments on larger files. I was going to hide two large text files in different images and see what would happen. The text files that I am using are larger.txt and lrandom.txt which are 72.7 KB and 70 KB in size.
+				</p>
+
+				<p>
+					Firstly I was going to save both images in the BMP file that I used in the previous exercise. I used the same encryption algorithm and password as previously for hiding the files. The first finding is that the new images are all identical in size and image quality as the original image. 
+					<br>Below are the images; the image on the left is the original and the image on the left is the image that is hiding the larger.txt file.
+				</p>
+
+				<img class="compare" src="img/steganography.bmp" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/steganography-large.bmp" title="Image with the file larger.txt hidden" alt="Image with the file larger.txt hidden"/>
+				
+				<p>
+					Below are the images; the image on the left is the original and the image on the left is the image that is hiding the lrandom.txt file. As you can see they are identical in image quality. They are both 220.4 KB in size.
+				</p>
+				
+				<img class="compare" src="img/steganography.bmp" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/steganography-lrandom.bmp" title="Image with the file lrandom.txt hidden" alt="Image with the file lrandom.txt hidden"/>
+				
+				<p>
+					Next I was to see how the original image as well as two images with hidden data would react to being compressed. I compressed each of the files and all of them reacted differently to the compression. The original file was 83% compressed which resulted it being 40 KB in size, the image that had the lrandom.txt was 32% compressed which resulted in its size being 152 KB and finally the image that had the larger.txt file hidden in it was 31% compressed resulting in its size being 154 KB. It is clear that the hidden file inside the image has a massive effect how much of the image can be compressed and that file compression is interfering with the storage of information resulting in the images being less than a third compressed.
+				</p>
+				
+				<p>
+					Next I was going to do the same test as above but on the GIF image instead of the BMP image. This time there is notable differences between the size of the original image <span>(89 KB)</span> and the sizes of cartoon-large.gif (174 KB) and cartoon-lrandom.gif <span>(172 KB)</span>. Also there is a clear difference in image quality between the images. 
+					<br>Below are the images; the image on the left is the original and the image on the right is the image that is hiding the larger.txt file.
+				</p>
+				
+				<img class="compare" src="img/cartoon.gif" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/cartoon-large.gif" title="Image with the file larger.txt hidden" alt="Image with the file larger.txt hidden"/>
+				
+				<p>
+					Below are the images; the image on the left is the original and the image on the right is the image that is hiding the lrandom.txt file.
+				</p>
+				
+				<img class="compare" src="img/cartoon.gif" title="Original Image" alt="Original Image"/>
+				<img class="compare" src="img/cartoon-lrandom.gif" title="Image with the file lrandom.txt hidden" alt="Image with the file lrandom.txt hidden"/>
+				
+				<p>
+					Next I continued to compress the three image files and this time the ratio of compression was extremely low for each of the files. The original file had the lowest compression of 2% and the other two files had a compression ratio of 4% each which resulted in all the compressed files being only slightly smaller than non compressed version.
+				</p>
+				
+				<p>
+					For the rest of this exercise I am going to carry out three experiments on this image using three different files. Each file is in a different format and is of a different size. I want to see how this image responds to trying to hide each of the files.
+				</p>
+				
+				<img src="img/steganography.bmp" title="Original Image" alt="Original Image"/>
+				
+				
+				<p>
+					<b>Experiment 1:</b>
+					For this experiment I am going to try to hide a Microsoft Office Word Document of 96 KB in size in the picture. The image was able to hide the picture and the difference in size was the new file was 1 KB greater than the original. Other than that everything else seems the same about the two pictures such as image quality. Below is the image that is hiding the file.
+				</p>
+				
+				<img src="img/steganography-ex1.bmp" title="Image hiding the MS Word Document" alt="Image hiding the MS Word Document"/>
+				
+				<p>
+					<b>Experiment 2:</b>
+					In this experiment I decided to hide an image within the image. I used the cartoon image that was used in an earlier exercise which is in GIF format and is 89 KB in size. It had the exact same results as the last experiment. So far these results are showing the 24 bit BMP is much better at hiding files when compared to 8 bit GIF. Below is the image that is hiding the file. 
+				</p>
+				
+				<img src="img/steganography-ex1.bmp" title="Image hiding the GIF image" alt="Image hiding the GIF image"/>
+				
+				<p>
+					<b>Experiment 3:</b> 
+					For this experiment I am going to try an hide a report that I have recently conducted as part of my fourth year project. The file is a Microsoft Office Word Document and the size of the file is 422 KB. Unfortunately I am unable to hide the file in the picture as the program keeps popping up with an error stating the file is too large for the picture.
+				</p>
+				
+				<p>
+					<b>Experiment 4:</b> 
+					I decided to conduct one last experiment to see if I could reduce the image quality of the 24 bit BMP. For this experiment I used a Javascript file of size 178 KB. Firstly it took the program longer to hide the file compared to the previous attempts and secondly the image quality was greatly reduced but the file was the exact same size as the original.
+				</p>
+				
+				<img src="img/steganography1.bmp" title="Image hiding the Javascript File" alt="Image hiding the Javascript File"/>
+				
+				<p>
+					<b>Is the hidden file exactly the same as the orginal?</b><br>
+					Yes when you retrieve a hidden file it is exactly same as the original. I have tried this on each of the above experiments and each time the hidden files is the exact same as the original.
+				</p>
+				
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+					
+					<p>
+						Gary C. Kessler. (2001). Steganography: Hiding Data Within Data .Available: http://www.garykessler.net/library/steganography.html. Last accessed 1-11-2011.
+		
+						<br><br>Neil F. Johnson. Steganography. Technical Report. November 1995
+					</p>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

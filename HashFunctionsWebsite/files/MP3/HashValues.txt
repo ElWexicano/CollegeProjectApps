@@ -1,0 +1,7 @@
+; SlavaSoft Optimizing Checksum Utility - fsum 2.52.00337 <www.slavasoft.com>
+;
+; Generated on 12/03/11 at 23:13:21 
+;
+8fe27ac006ecbf77bd1e0eb000eb90c7 *BBCShow.mp3
+bae8f8d33c0fe9f4122ff17e71952e5278dff0ef ?SHA1*BBCShow.mp3
+82d33b78 ?ADLER32*BBCShow.mp3

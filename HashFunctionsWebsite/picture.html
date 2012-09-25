@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Hash Functions</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">hash functions</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pdf.html">PDF</a></li>
+						<li class="active"><a href="picture.html">Picture</a></li>
+						<li><a href="audio.html">Audio</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="exchange.html">Exchange</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Picture</h1>
+				
+				<p>
+					In this section I will be seeing how the three hash functions perform when generating a hash function for five JPEG images and the combined size of the images was 1.96mb. Below are the images that were used.
+				</p>
+				
+				<ul>
+					<li><a href="files/JPG/Feel No Evil.jpg">Feel No Evil.jpg</a></li>
+					<li><a href="files/JPG/Motivation.jpg">Motivation.jpg</a></li>
+					<li><a href="files/JPG/Sad Pills.jpg">Sad Pills.jpg</a></li>
+					<li><a href="files/JPG/Star Wars.jpg">Star Wars.jpg</a></li>
+					<li><a href="files/JPG/Stormtrooper.jpg">Stormtrooper.jpg</a></li>
+				</ul>
+				
+				<h2>MD-5</h2>
+				
+				<p>
+					Firstly I was going to get the MD-5 hash values for all of the images and this can be accomplished by running the following command. <i>fsum -md5 *.jpg>MD5Hashes</i> and it instantly produced a 128 bit hash value for each of the images which can be seen below. 
+				</p>
+				
+				<p>
+					<b>3882b510aebe020a8f1d0f9c43779f31</b> *Feel No Evil.jpg<br>
+					<b>48b266a7f037f07405f71885cfee329e</b> *Motivation.jpg<br>
+					<b>6eed3027bdb0364cba919fb4245bf37e</b> *Sad Pills.jpg<br>
+					<b>face55da1acca31ce7a944818e7a196c</b> *Star Wars.jpg<br>
+					<b>52b3c7cced2ced53088b92cb5bdec04e</b> *Stormtrooper.jpg
+				</p>
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected.
+				</p>
+				
+				<img src="img/JPG/verifyMD5.png" title="Verifying MD5" alt="Verifying MD5"/>
+				
+				<h2>SHA-1</h2>
+				
+				<p>
+					Next I was going to get the SHA-1 hash values for all of the images and this can be accomplished by running the following command <i>fsum –sha1 *.jpg>SHA1Hashes</i> and it instantly produced a 160 bit hash value for each of the images which can be seen below.
+				</p>
+				
+				<p>
+					<b>7d5cdcdd9be54f9c9a129b8d1308bf76051216ee</b> *Feel No Evil.jpg<br>
+					<b>5ade2b00b2e98c9284dedde240fe97b7094d7186</b> *Motivation.jpg<br>
+					<b>1972f0d63f086d1fc05fa35885e9252fb25471c6</b> *Sad Pills.jpg<br>
+					<b>3f555378aa5079702e55071930c945c5ce4da91f</b> *Star Wars.jpg<br>
+					<b>4fd0763468daab41950420d495f8b39aa94a19be</b> *Stormtrooper.jpg
+				</p>
+				
+				<p>
+					This time to prove that by changing either one of the hash values or one of the images would result in verification failing so I changed the hash value for several of the images and then I ran the command below.
+				</p>
+				
+				<img src="img/JPG/verifySHA1.png" title="Verifying SHA1" alt="Verifying SHA1"/>
+				
+				<h2>Adler-32</h2>
+				
+				<p>
+					Finally I was to get the Adler-32 hash values for all of the images and this can be accomplished by running the following command <i>fsum –adler *.jpg >Adler32Hashes</i> and it instantly produced hash value for each of the images which can be seen below.
+				</p>
+						
+				<p>
+					<b>660e4b9a</b> *Feel No Evil.jpg<br>
+					<b>3f2184ec</b> *Motivation.jpg<br>
+					<b>bca85ad2</b> *Sad Pills.jpg<br>
+					<b>238f43e9</b> *Star Wars.jpg<br>
+					<b>a66e094f</b> *Stormtrooper.jpg
+				</p>	
+				
+				<p>
+					Next I wanted to verify the integrity of the hash value and to prove that it should still work as a long as the files or hash values had not changed. The screenshot below shows the command that was used and the result which was as expected.
+				</p>
+				
+				<img src="img/JPG/verifyAdler.png" title="Verifying Adler" alt="Verifying Adler"/>
+					
+					
+				<h4>Hash Value Files</h4>
+					
+				<ul>
+					<li><a href="files/JPG/MD5Hashes.txt">MD-5 Hash Values File</a></li>
+					<li><a href="files/JPG/SHA1Hashes.txt">SHA-1 Hash Values File</a></li>
+					<li><a href="files/JPG/Adler32Hashes.txt">Adler32 Hash Values File</a></li>
+				</ul>
+								
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						An Illustrated Guide to Cryptographic Hashes. 2011. An Illustrated Guide to Cryptographic Hashes. [ONLINE] Available at: http://unixwiz.net/techtips/iguide-crypto-hashes.html. [Accessed 24 November 2011].
+					</p>
+
+					<p>
+						Bruce Schneier, 1995. Applied Cryptography: Protocols, Algorithms, and Source Code in C, 2nd Edition. 2 Edition. Wiley.
+					</p>
+					
+
+				</div>
+				
+				
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+	
+</body>
+
+</html>

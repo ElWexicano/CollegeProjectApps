@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Digital Certificates</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div class="main">
+
+		<div class="header">
+			
+			<div class="headerHolder">
+				<span class="title">Digital Certificates</span>
+				<span class="divide">|</span>
+				<span class="motto">Security Principles Research</span>
+				
+				<div class="menubar">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="amazon.html">Amazon</a></li>
+						<li><a href="dabs.html">Dabs</a></li>
+						<li><a href="ebay.html">eBay</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="content">
+			
+			<div class="contentHolder">
+				
+				<h1>Welcome to the site</h1>
+				
+				<p>
+					This site was developed for a Security Principles assignment based upon Digital Certificates. The site is best viewed in Mozilla Firefox 7 but it should be fine to view it in Google Chrome or Safari. If you're using Internet Explorer to view this site then stop immediately and get yourself a proper browser to view it in.
+				</p>
+				
+				<p>
+					During this research I had to find at least two websites that either sell products or services. The websites must provide SSL-based communication and for each of them I was to find and copy their Server Certificate to a DER-encoded file. 
+				</p>
+				
+				<p>
+					Note. For this research I am using a Linux OS laptop and the internet browser is Mozilla Firefox.
+				</p>
+				
+				<h2>About Digital Certificates</h2>
+				
+				<p>
+					Digital Certificates are used to ensure that the public key in which you are encrypting data belongs to the intended recipient and is not a public key of someone falsely claiming to be the recipient. They are used as form of certificate or identification for an entity and they store information such as public keys, information about the algorithms used, owner and subject details, digital signatures, as well as the time period that the certificate is considered valid. 
+				</p>
+				
+				<p>
+					They are issued by Certificate Authorities who in essence are trusted third parties that verify that public key or other information actually belongs to who it says it belongs to.  Before a Digital Certificate is issued, the Certificate Authority verifies the entity and then provides the Digital Certificate. Examples of Certificate Authorities include VeriSign, GlobalSign, GoDaddy, Comodo, OpenCA and OpenSSL. 
+				</p>
+				
+				
+				<h4>A Digital Certificate is generally issued in the following format:</h4>
+				
+				<ul>
+					<li>First the entity requiring a Digital Certificate generates their public and private keys. </li>
+					<li>Next the entity requests a Digital Certificate from a Certificate Authority, who in return requests information from the entity to prove that they are genuine. </li>
+					<li>The entity then sends their public keys and the proof of identity to the Certificate Authority. This information is normally encrypted by the entity prior to it being sent.</li>
+					<li>Once it's received by the Certificate Authority they begin to verify the information. </li>
+					<li>If the information and entity are deemed to be genuine a Digital Certificate is created with the correct information. </li>
+					<li>The Digital Certificate is either sent directly back to the entity or distributed publicly for future use.</li>
+				</ul>
+				
+				<p>
+					Digital Certificate's can also be revoked, this happens when the Certificate Authorities release a list of all the certificates that have been revoked which is known as Certificate Revocation List (CRL). The reason for a certificate being revoked could be the private key was compromised or the Certificate Authority found out that the entity used false information to get a Digital Certificate.
+				</p>
+				
+				<h4>They are four types of Digital Certificates are used on the Internet;</h4>
+				
+				<ol>
+					<li><b>Personal Certificates:</b> these certificates are used to provide an identity to individuals and they are mainly used to provide authentication with users interacting with servers or using secure emails.</li>
+					<li><b>Sever Certificates:</b> these certificates are used to ensure that the servers that clients are communicating with are genuine. It is basically a way of authenticating servers.</li>
+					<li><b>Software Publisher Certificates:</b> are used to identify to clients that the software publisher is working with trusted by Certificate Authorities but it does not ensure that software is safe to run.</li>
+					<li><b>Certificate Authority Certificates:</b> there are two different types of these certificates. One being root certificates that are assigned by the same company that applied for the certificate and the other being intermediate certificates that have been assigned by other companies.</li>
+				</ol>
+				
+				<h4>To obtain a Digital Certificate for a website using Google Chrome or Mozilla Firefox, follow the steps outlined below:</h4>
+				
+				<p>
+					Go to a site that provides SSL-Based communication.<br>
+					Look for the Digital Certificate button in the address bar.<br>
+					Finally click on the button to see the digital certificate.<br>
+				</p>
+				
+				<h5>To obtain a Digital Certificate for a website using Internet Explorer, follow the steps outlined below:</h5>
+				<p>
+					Go to a site that provides SSL-Based communication.<br>
+					Click on the browsers File Menu.<br>
+					Next Click Properties and then Certificates.<br>
+					Finally click on the Details tab to see the digital certificate.<br>
+				</p>
+				
+				<div class="reference">
+					
+					<h3>Reference</h3>
+					
+					<p>
+						All the information used in this website has been sourced from the following locations:
+					</p>
+
+					<p>
+						About eBay. 2011. About eBay. [ONLINE] Available at: http://pages.ebay.ie/aboutebay.html. [Accessed 26 November 2011].
+					</p>
+
+					<p>
+						Amazon.com: About Amazon. 2011. Amazon.com: About Amazon. [ONLINE] Available at: http://www.amazon.com/Careers-Homepage/b?ie=UTF8&node=239364011. [Accessed 26 November 2011].
+					</p>
+					
+					<p>
+						Dabs Ireland - About Dabs: Our history and growth. 2011. Dabs Ireland - About Dabs: Our history and growth. [ONLINE] Available at: http://www.dabs.ie/articles/help/new-to-dabs/about-dabs--our-history-and-growth-2052.html. [Accessed 26 November 2011].
+					</p>
+					
+					<p>
+						Description of Digital Certificates . 2011. Description of Digital Certificates . [ONLINE] Available at: http://support.microsoft.com/kb/195724. [Accessed 26 November 2011].
+					</p>
+					
+					<p>
+						Fortune 500 2011: Fortune 1000 Companies 1-100 - FORTUNE on CNNMoney.com. 2011. Fortune 500 2011: Fortune 1000 Companies 1-100 - FORTUNE on CNNMoney.com. [ONLINE] Available at: http://money.cnn.com/magazines/fortune/fortune500/2011/full_list/. [Accessed 26 November 2011].
+					</p>
+
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="footer">
+		
+		<div class="footerHolder">
+		
+			<div class="author">
+				Developed by Shane Doyle (iamshanedoyle@ubuntu)
+				<span>|</span> BSc (Hons) in Software Systems Development Year 4
+			</div>
+
+		</div>
+		
+	</div>
+
+</body>
+</html>

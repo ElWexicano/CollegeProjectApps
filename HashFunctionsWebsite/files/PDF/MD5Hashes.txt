@@ -1,0 +1,6 @@
+; SlavaSoft Optimizing Checksum Utility - fsum 2.52.00337 <www.slavasoft.com>
+;
+; Generated on 12/03/11 at 21:01:04 
+;
+6e7abe112a72b0f2ed3ca8e9733b1801 *jQuery in Action.pdf
+ca148588f264be83bee5df58f9bb10e6 *Software Engineering 9th Edition.pdf
