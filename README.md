@@ -1,4 +1,4 @@
-college-project-apps
+CollegeProjectApps
 ====================
 
 This repository stores most of the different college project applications that I have created.
