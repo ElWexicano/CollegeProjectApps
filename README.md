@@ -20,6 +20,8 @@ Java Based
 
 J2EE Based
 * QuizGame
+* ConverterApp
+* Exercises
 
 Websites
 * DigitalCertificatesWebsite
